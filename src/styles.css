@@ -1,0 +1,218 @@
+@media only screen and (max-width: 414px) {
+  body {
+    background-image: url("../Images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: center center, top left;
+    background-size: cover, 100% 100%;
+  }
+
+  .appImage {
+    margin-left: -10px;
+    margin-top: 40px;
+    order: 2;
+    background-image: url("../Images/hero-mobile.jpg");
+    background-repeat: none;
+    background-size: cover;
+    width: 380px;
+    height: 245px;
+  }
+
+  /* .appImage img {
+    width: 100px;
+    height: 145px; 
+    
+  } */
+
+  .App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .topText {
+    margin-top: 20px;
+    letter-spacing: 1rem;
+    color: rgb(207, 162, 170);
+    margin-top: 1.5em;
+    font-size: 3.5em;
+    margin-bottom: -1em;
+    text-align: center;
+  }
+  .largeText {
+    letter-spacing: 1rem;
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .smallText {
+    color: rgb(207, 162, 170);
+    margin-top: -3rem;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  /*.smallText span::before {
+    content: "\A"; /* Generates a newline */
+  /*white-space: pre;
+  } */
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputField Form {
+    display: flex;
+    align-items: center;
+  }
+  input {
+    border: 1px solid salmon;
+    height: 45px;
+    width: 250px;
+    border-radius: 30px;
+  }
+
+  .Btn {
+    margin-left: -60px;
+    width: 5rem;
+    height: 50px;
+    border-radius: 2rem;
+    border: 1px solid rgb(207, 162, 170);
+    background-color: rgb(207, 162, 170);
+    transform: ease 0.3s;
+  }
+
+  .Btn:hover {
+    transform: scale(1.2);
+    border: 5px solid rgb(255, 239, 239);
+  }
+
+  .submitBtn {
+    background-color: rgb(207, 162, 170);
+  }
+
+  .contentContainer {
+    order: 3;
+    height: 530px;
+    width: 350px;
+  }
+
+  .errorMsg {
+    margin-left: -60px;
+    color: red;
+  }
+
+  .hdrLogo {
+    order: 1;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////// MOBILE END DESKTOP START //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-image: url("../Images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: center center, top left;
+    background-size: cover, 100% 100%;
+  }
+  .App {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .topText {
+    letter-spacing: 1rem;
+    color: rgb(207, 162, 170);
+    margin-top: 1.5em;
+    font-size: 5em;
+    margin-bottom: -1em;
+  }
+  .largeText {
+    letter-spacing: 1rem;
+    font-size: 5em;
+  }
+
+  .smallText {
+    letter-spacing: 0.1rem;
+    color: rgb(207, 162, 170);
+    margin-top: -3rem;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-style: left;
+  }
+
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 50px; */
+  }
+  .inputField Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    border: 1px solid salmon;
+    height: 55px;
+    width: 480px;
+    border-radius: 30px;
+  }
+
+  .Btn {
+    margin-left: -90px;
+    width: 6rem;
+    height: 60px;
+    border-radius: 2rem;
+    border: 1px solid rgb(207, 162, 170);
+    background-color: rgb(207, 162, 170);
+    transform: ease 0.3s;
+  }
+
+  .Btn:hover {
+    transform: scale(1.2);
+    border: 5px solid rgb(255, 239, 239);
+  }
+
+  .submitBtn {
+    background-color: rgb(207, 162, 170);
+  }
+
+  .contentContainer {
+    /* justify-content: left; */
+    order: 3;
+    margin-top: -650px;
+    margin-left: 120px;
+    height: 550px;
+    width: 500px;
+  }
+
+  /* .appImage img {
+    order: ;
+    width: 3000px;
+    height: 3450px;
+    object-fit: cover 100% 100%;
+  } */
+  .appImage {
+    order: 2;
+    background-image: url("../Images/hero-desktop.jpg");
+    background-position: cover;
+    background-repeat: none;
+    /* width: 1000px; */
+    height: 734px;
+  }
+
+  .hdrLogo {
+    order: 1;
+    margin-left: 120px;
+    margin-top: 60px;
+  }
+}
